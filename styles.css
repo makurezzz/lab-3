@@ -1,85 +1,189 @@
- {
-    margin: 0;
+* {
     padding: 0;
-    height: 300vh;
-    font-display: ;    background-color: #ffffff;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "roboto", sans-serif;
 }
-body{
+
+body {
     width: 100vw;
     height: 100vh;
+    background-image: url(https://png.pngtree.com/background/20230611/original/pngtree-this-colorful-painting-is-a-colorful-mushroom-land-picture-image_3172038.jpg);
     display: flex;
-    flex-direction: column;
-
     justify-content: center;
     align-items: center;
-    font-family: "roboto", sans-serif;
-
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
-.login-container {
-    background-color: #f6f6f6;
-    padding: 50px;
+
+
+section.general .boxcontainer {
+    background-color: white;
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0.5, 0.5, 0.5, 0.5);
 }
 
-.login-form {
-    max-width: 300px;
-    margin: 5 auto;
-}
-
-.login-form h2 {
+.boxcontainer__insade{
     display: flex;
     flex-direction: column;
-    text-align: center;
+    justify-content: space-evenly;
+    padding: .5rem;
+    align-items: center;
 }
 
-.input-group {
-    margin-bottom: 10px;
-}
-
-.input-group label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.input-group input {
-    width: 100%;
-    padding: 8px;
+.imagen_de_al_frente{
+    width: 435px;
+    height: 400px;
     border-radius: 5px;
-    border: 1px solid #000000;
+    box-shadow: 0 0 10px rgba(0.5, 0.5, 0.5, 0);
 }
-.tercercuadro {
-    display: flex;
-    flex-direction: column;
+
+.box__title{
     text-align: center;
 }
-.button-div {
+.box__info{
+    text-align: center;
+}
+
+section.general form.fielt_container {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    align-content: center;
 }
-button {
+
+.container_visual_letters{
+    display: flex;
+
+}
+fieldset {
+    all:unset;
+}
+
+fieldset > div {
+    position: relative;
+}
+#icono_usarname::before {
+    content: url('https://api.iconify.design/lucide/user-round.svg?color=grey&width=16&height=16');
+    position: absolute;
+    top: 7px;
+
+}
+#icono_password::before {
+    content: url('https://api.iconify.design/uil/padlock.svg?color=grey&width=16&height=16');
+    position: absolute;
+    top: 7px;
+}
+.imput_desing{
+    height: 5vh;
+    border: none;
+    border-bottom: 1px solid grey;
+    padding-left: 30px;
     width: 100%;
-    padding: 10px;
-    background-color: #ffffff;
-    color: #000000;
-    border-bottom: #000000;
-    border-radius: 5px;
+}
+
+.container_visual_password{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+.box__social{
+    text-align: center;
+}
+
+
+.button-loggin{
+    position: relative;
+    border-radius: 8px;
+    width: 250px;
+    max-width: 250px;
+    height: 35px;
+    max-height: 35px;
+    background-color: rgb(74, 70, 129);
+    color: #ffffff;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-
-    
+    margin-top: 10px;
 }
 
-button:hover {
-    color: #f6f6f6;
-    background-color: #6a00ff;
+.button-loggin::before{
+    content: '';
+    background-color: #0400ff;
+    left: 0;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    transition: all .5s;
+    z-index: 1;
+    top: 0;
 }
-body{
-    width: 90vw;
-    height: 90vh;
-    background-repeat: no-repeat;
-  background-size: 100rem;
-    background-image:url(https://png.pngtree.com/background/20230611/original/pngtree-this-colorful-painting-is-a-colorful-mushroom-land-picture-image_3172038.jpg);
+
+.button-loggin span{
+    position: relative;
+    z-index: 10;
+}
+
+.button-loggin:hover::before{
+width: 100%;
+}
+
+.button-loggin:hover span{
+    color: white;
+}
+
+.caja_top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.caja_top p {
+    width: 100%;
+}
+
+.caja_top .icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.caja_top .icon.box_social--facebook {
+    background-color: #3b5899;
+}
+
+.caja_top .icon.box_social--x  {
+    background-color: #219fde;
+}
+
+.caja_top .icon.box_social--google  {
+    background-color: #ef3c40;
+}
+
+
+
+.caja_top .icon.box_social--facebook::before {
+    content: url('https://api.iconify.design/fa/facebook.svg?color=white&width=16&height=16');
+}
+
+.caja_top .icon.box_social--x::before  {
+    content: url('https://api.iconify.design/mdi/twitter.svg?color=white&width=16&height=16');
+}
+
+.caja_top .icon.box_social--google::before  {
+    content: url('https://api.iconify.design/mingcute/google-fill.svg?color=white&width=16&height=16');
+}
+
+.caja_social {
+    position: absolute;
+    bottom: 20px;
+    margin: auto;
+    left: 0;
+    right: 0;
 }

@@ -1,43 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <title>Log In</title>
 </head>
+
 <body>
-    <section class="login-complete">
-     <div>
-        <div class="login-container">
-            <form action="#" method="post" class="login-form">
-                <h2>Login</h2>
-                <div class="input-group">
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" placeholder="type your username" required>
-                </div>
-                <div class="input-group">
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" placeholder="type your password">
-                </div>
-                <div class="button-div">
-                <button type="submit">Login</button>
-            </div>
-                <div class="tercercuadro">
-                    <p>Or sing up using</p>
-                    <div> 
-                <div class="lastone">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt="facebook" height="50px" >
-                    <img src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-twitter-social-media-round-icon-png-image_6315985.png" alt="twitter" height="52px">
-                    <img src="https://static.vecteezy.com/system/resources/previews/017/743/717/non_2x/instagram-icon-logo-free-png.png" alt="instagram" height="50px" >
-                    <p>Or sing up using</p>
-                    <h4> sing up </h4>
+
+    <section class="general">
+        <div class="boxcontainer">
+            <div class="boxcontainer__insade">
+
+                <div class="box__info">
+                    <div class="box__title">
+                        <h1>Login</h1>
+                    </div>
+                    <form method="post" class="fielt_container">
+                        <fieldset>
+                            <label class="container_visual_letters" for="username">Username</label>
+                            <div id="icono_usarname">
+                                <input class="imput_desing" type="text" name="username" placeholder="Type your username"
+                                    required>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <label class="container_visual_letters" for="password">Password</label>
+                            <div id="icono_password">
+                            <input class="imput_desing" type="password" name="password" placeholder="Type your password"
+                                required>
+                            </div>
+                        </fieldset>
+                        <button class="button-loggin" type="submit">
+                            <span>Loggin</span>
+                            
+                        </button>
+                    </form>
                 </div>
 
-                
-            </form>
-        </div>
-     </div>
+                <section class="box__social">
+                    <div class="box_social_top">
+                        <p>Or Sing Up using</p>
+                        <div class="icon box_social--facebook"></div>
+                        <div class="icon box_social--x"></div>
+                        <div class="icon box_social--google"></div>
+                    </div>
+
+
+                </section>
+
+            </div>
+            <img class="imagen_de_al_frente" src="https://www.revistaanfibia.com/wp-content/uploads/2023/06/Damian-Huergo_Juan-Lacour_01.jpg" alt="imagefrente">
+
     </section>
+
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 </body>
+
 </html>
