@@ -1,0 +1,85 @@
+ {
+    margin: 0;
+    padding: 0;
+    height: 300vh;
+    font-display: ;    background-color: #ffffff;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    font-family: "roboto", sans-serif;
+
+}
+.login-container {
+    background-color: #f6f6f6;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0.5, 0.5, 0.5, 0.5);
+}
+
+.login-form {
+    max-width: 300px;
+    margin: 5 auto;
+}
+
+.login-form h2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+.tercercuadro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.button-div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    border-bottom: #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+    
+}
+
+button:hover {
+    color: #f6f6f6;
+    background-color: #6a00ff;
+}
+body{
+    width: 90vw;
+    height: 90vh;
+    background-repeat: no-repeat;
+  background-size: 100rem;
+    background-image:url(https://png.pngtree.com/background/20230611/original/pngtree-this-colorful-painting-is-a-colorful-mushroom-land-picture-image_3172038.jpg);
+}
